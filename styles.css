@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container{
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .imageContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: start;
+    margin-bottom: 80px;
+}
+.container .imageContainer p{
+    margin: 0;
+    line-height: 2rem;
+    margin-left: 32px;
+    font-size: 32px;
+}
+
+#facebookImage{
+    height: 100px;
+}
+.container .login-card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .login-card .form{
+    width: min-content;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    padding: 12px 15px 10px 12px;
+    border: 2px solid #f6f6f9;
+    box-shadow: 0px 2px 5px rgba(249, 249, 249, 1);
+}
+
+.container .login-card .form input{
+    margin-bottom: 12px;
+    min-width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.container .login-card .form .loginItem{
+    border: 1px #c2c6ca solid;
+}
+
+.container .login-card .form .loginItem:active{
+    border: 1px #1977f2 solid;
+}
+
+#loginButton{
+    background-color: #1977f2;
+    color: #fff;
+    border: none;
+}
+.container .login-card .form a{
+    color: #1977f2;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.container .login-card .form hr {
+    display: block;
+    border-top: 0.6px solid #c2c6ca;
+    margin: 12px 0;
+    width: 100%;
+}
+
+#singupButton{
+    background-color: #42b72a;
+    color: #fff;
+    border: none;
+    min-width: 180px;
+    margin: 0 20px;
+    padding: 10px 12px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: block;
+        align-items: center;
+    }
+
+    .container .login-card {
+        margin-left: 36px;
+    }
+}
